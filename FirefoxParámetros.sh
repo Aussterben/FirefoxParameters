@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Colours
+#Colores
 greenColour="\e[0;32m\033[1m"
 endColour="\033[0m\e[0m"
 redColour="\e[0;31m\033[1m"
@@ -10,15 +10,18 @@ purpleColour="\e[0;35m\033[1m"
 turquoiseColour="\e[0;36m\033[1m"
 grayColour="\e[0;37m\033[1m"
 
+# Cancelar procesos
 ctrl_c(){
   echo -e "\n"${yellowColour}[+]${endColour}${grayColour} Cancelando Procesos...${endColour}
-  sleep 2
+  sleep 1
   echo -e "\n"${yellowColour}[+]${endColour}${grayColour} Procesos Cancelados!${endColour}
   exit 1
 }
 
+# Llama a la función "ctrl_c"
 trap ctrl_c SIGINT
 
+# Parámetros
 opciones(){
  case $1 in 
   -f)
@@ -74,6 +77,7 @@ opciones(){
     ;;
   -d)
     echo -e "\n"${yellowColour}[+]${endColour}${grayColour} Descargando${endColour}${redColour} figlet${endColour}${grayColour} en...${endColour}
+    sleep 1
     echo -e "\n"${yellowColour}[+]${endColour}${grayColour} 5...${endColour}
     sleep 1
     echo -e "\n"${yellowColour}[+]${endColour}${grayColour} 4...${endColour}
@@ -100,4 +104,5 @@ opciones(){
  esac   
 }
 
+# Llama a la función "Parámetros"
 opciones $1
