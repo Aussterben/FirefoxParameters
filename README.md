@@ -1,0 +1,6 @@
+_________________________________________________________________________________________________________
+Recientemente hemos subido 2 vídeos de scripting en bash a youtube, uno de introducción y otro de parámetros
+La intención de este script es juntar ambos scripts, añadiendo nuevas funciones
+
+Youtube: https://www.youtube.com/@lordAussterben
+_________________________________________________________________________________________________________
