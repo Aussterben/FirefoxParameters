@@ -1,5 +1,10 @@
 #!/bin/bash
 
+####################################
+#       Script by Aussterben       #
+####################################
+
+
 #Colores
 greenColour="\e[0;32m\033[1m"
 endColour="\033[0m\e[0m"
